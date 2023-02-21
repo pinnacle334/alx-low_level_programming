@@ -2,7 +2,8 @@
 /**
  *main - A program that prints _putchar followed by a new line
  *
- * return: 0 (Sucess)
+ * Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
