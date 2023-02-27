@@ -11,8 +11,10 @@ int main()
 	int n;
 	int *ptr;
 
+	n = 402;
 	ptr = &n;
+	printf("%d\n", n);
 	*ptr = 98;
-	putchar('n');
-	putchar('\n');
+	printf("%d\n", n);
+	return (0);
 }
