@@ -6,9 +6,7 @@
  */
 void _puts(char *str)
 {
-	char c;
-
-	c = "Hello"
-		_putc(c, stdout);
-	return (0);
+	char *str;
+	_putc(str, stdout);
+	return (str);
 }
