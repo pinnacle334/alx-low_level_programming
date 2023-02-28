@@ -1,22 +1,20 @@
 #include "main.h"
 /**
  * print_rev - a function that prints a string, in reverse.
- * forward is to count forward and b for backwards
  * @s: string
  * Return: string in reverse.
  */
 void print_rev(char *s)
 {
-	int forward = 0;
-	int i, b;
+	int n = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[n] != '\0')
 	{
-		forward++;
+		n++;
 	}
-	for (b = (forward - 1); b >= 0; b--)
+	for (n -= n; n >= 0; n--)
 	{
-		_putchar(s[b]);
+		_putchar(s[n]);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
