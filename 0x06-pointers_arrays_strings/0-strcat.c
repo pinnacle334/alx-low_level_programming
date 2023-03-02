@@ -7,8 +7,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char dest[];
-	char src[];
+	char dest[] = " ";
+	char src[] = "\n";
 
 	strcat(dest, src);
 	return (0);
