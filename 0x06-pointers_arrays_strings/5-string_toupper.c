@@ -13,7 +13,7 @@ char *string_toupper(char *n)
 	j = 'a' - 'A';
 
 	i = 0;
-	while (n[i])
+	while (n[i] != '\0')
 	{
 		if ((n[i] >= 'a') && (n[i] <= 'Z'))
 			n[i] -= j;
