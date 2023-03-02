@@ -10,7 +10,7 @@ char *string_toupper(char *n)
 	int i;
 	int j;
 
-	j = 'a' - 'A';
+	j = 32;
 
 	i = 0;
 	while (n[i])
