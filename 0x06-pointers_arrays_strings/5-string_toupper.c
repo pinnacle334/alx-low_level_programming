@@ -19,7 +19,6 @@ char *string_toupper(char *n)
 			n[i] -= j;
 		i++;
 	}
-
 	_putchar('\0');
 	return(n);
 }
