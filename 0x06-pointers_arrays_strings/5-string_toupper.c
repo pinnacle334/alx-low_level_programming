@@ -20,6 +20,6 @@ char *string_toupper(char *n)
 		i++;
 	}
 
-	_putchar('\n');
+	_putchar('\0');
 	return(n);
 }
