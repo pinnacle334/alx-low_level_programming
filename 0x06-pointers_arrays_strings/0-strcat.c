@@ -12,5 +12,6 @@ char *_strcat(char *dest, char *src)
 	char src[];
 
 	strcat(dest, src);
+	_putchar(dest);
 	return (0);
 }
