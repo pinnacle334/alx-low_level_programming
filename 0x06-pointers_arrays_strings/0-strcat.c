@@ -8,10 +8,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char dest[];
-	char src[];
+	char dest[] = "abc ";
+	char src[] = "de\n";
+	char *ptr;
 
-	strcat(dest, src);
-	_putchar(dest);
+	ptr = strcat(dest, src);
+	_putchar(ptr);
 	return (0);
 }
