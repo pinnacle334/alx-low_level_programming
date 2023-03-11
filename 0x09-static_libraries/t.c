@@ -4,10 +4,13 @@
  * _strstr - a function.
  * @haystack: point1
  * @needle: point2
- * Return: haystack.
+ * Return: string.
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	return (*haystack);
+	char *a = haystack;
+	char *b = needle;
+
+	return (a);
 }
