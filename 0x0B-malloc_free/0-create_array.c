@@ -3,15 +3,24 @@
 /**
  * create_array - a function that creates an array of chars,
  * and initializes it with a specific char.
- * @n: size
+ * @size: size
  * @c: variabe.
  * Return: 0.
  */
 
 char *create_array(unsigned int size, char c)
 {
-	int n;
+	int size;
 
-	char *c = (char*)malloc(n*sizeof(char));
-	c[0] = 'd';
+	char *arr = (char *)malloc(size * sizeof(char));
+
+	if (arr == NULL)
+	{
+		return (NULL);
+	}
+	for (int i = 0; i < size; i++)
+	{
+		arr[i] = c;
+	}
+	return (c);
 }
