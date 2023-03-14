@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	if (copy == NULL)
 	{
-		return (NULL);
+	 printf("failed to allocate memory\n"); 
 	}
 	return (copy);
 }
