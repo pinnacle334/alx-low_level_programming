@@ -17,10 +17,9 @@ char *_strdup(char *str)
 	char *copy = malloc(length + 1);
 
 	strcpy(copy, str);
-
 	if (copy == NULL)
 	{
-	 printf("failed to allocate memory\n"); 
+		printf("failed to allocate memory\n");
 	}
 	return (copy);
 }
