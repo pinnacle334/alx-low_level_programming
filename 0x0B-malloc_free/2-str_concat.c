@@ -24,7 +24,7 @@ strcpy(copy, s1);
 if (copy == NULL)
 {
 printf("Empty\n");
-return (1);
+return (NULL);
 }
 return (copy);
 }
