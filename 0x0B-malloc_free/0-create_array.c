@@ -19,8 +19,10 @@ char *create_array(unsigned int size, char c)
 	scanf("%u", &size);
 	arr = (char *)malloc(size * sizeof(char));
 
-	for (size == 0)
+	if (size == 0)
+	{
 		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	{
 		arr[i] = c;
