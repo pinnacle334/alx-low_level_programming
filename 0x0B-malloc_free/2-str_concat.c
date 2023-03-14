@@ -10,21 +10,31 @@
  * Return: 0.
  */
 
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2);
 {
-int len;
-char *copy;
+	char *str;
+	unsigned int i, j, size;
 
-strcat(s1, s2);
+	if (s1 == NULL)
+		s1 = "";
 
-len = strlen(s1);
-copy = malloc(len + 1);
+	if (s2 == NULL)
+		s2 = "";
 
-strcpy(copy, s1);
-if (copy == NULL)
-{
-printf("Empty\n");
-return (NULL);
-}
-return (copy);
+	size = (strlen(s1) + strlen(s2) + 1);
+	str = (char *)mallock(size * sizeof(char));
+
+	if (str == 0)
+	{
+		return (NULL);
+	}
+	for (i = 0; *(s1 + i) != '\0'; i++)
+		*(str + 1) = *(s1 + 1);
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(str + i) * *(s2 + j);
+		i++;
+	}
+
+	return (str);
 }
