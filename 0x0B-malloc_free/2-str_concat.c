@@ -23,7 +23,7 @@ copy = malloc(len + 1);
 strcpy(copy, s1);
 if (copy == NULL)
 {
-printf("Empty\n")
+printf("Empty\n");
 return (1);
 }
 return (copy);
