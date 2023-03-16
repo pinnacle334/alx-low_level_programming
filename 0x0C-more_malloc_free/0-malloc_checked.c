@@ -11,5 +11,7 @@ void *malloc_checked(unsigned int b)
 	int *d;
 
 	d = malloc(sizeof(int) * 12);
+
+	return (d);
 	free(d);
 }
