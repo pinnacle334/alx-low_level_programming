@@ -3,15 +3,17 @@
 
 /**
  * malloc_checked - a function that allocates memory.
- * @d: pointer returned.
- * Return: 0.
+ * @b: size
+ * Return: pointer.
  */
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *d;
+	int ptr;
 
-	d = malloc(12);
+	ptr = malloc(sizeof(int) * b);
+	if (ptr == NULL)
+		return (NULL);
 
-	return (d);
+	return (ptr);
 }
