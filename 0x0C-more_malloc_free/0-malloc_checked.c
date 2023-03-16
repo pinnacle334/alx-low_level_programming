@@ -9,9 +9,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *d;
+	unsigned int *d;
 
-	d = malloc(sizeof(int) * 12);
+	d = malloc(12);
 
 	return (d);
 }
