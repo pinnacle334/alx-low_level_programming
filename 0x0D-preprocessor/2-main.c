@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-#define _FILE_
-
 /**
  * main - a program that prints the name of the file
  *
- * Return: Always ).
+ * Return: 0.
  */
 
 int main(void)
