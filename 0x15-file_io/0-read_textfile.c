@@ -15,16 +15,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buff;
 
 	if (!filename)
-		return (0);
+	{
+	return (0);
+	}
 
 	ft = open(filename, O_RDONLY);
 
 	if (ft == -1)
-		return (0);
+	{
+	return (0);
+	}
 
 	buff = malloc(sizeof(char) * (letters));
 	if (!buff)
-		return (0);
+	{
+	return (0);
+	}
 
 	pd = read(ft, buff, letters);
 	pq = write(STDOUT_FILENO, buff, pd);
