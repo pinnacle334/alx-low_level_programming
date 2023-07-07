@@ -24,7 +24,7 @@ return (0);
 
 for (i = lent - 1; i >= 0; i--)
 {
-	if (b[i] != '0' || '1')
+	if (b[i] > '1')
 		return (0);
 
 	else if (b[i] == '1')
