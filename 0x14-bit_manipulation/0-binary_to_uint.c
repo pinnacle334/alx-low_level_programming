@@ -19,9 +19,15 @@ int i;
 result = 0;
 lent = strlen(b);
 
+if (lent == 0)
+return (0);
+
 for (i = lent - 1; i >= 0; i--)
 {
-	if (b[i] == '1')
+	if (b[i] != '0' || '1')
+		return (0);
+
+	else if (b[i] == '1')
 	{
 		result = result + pow(2, lent - i - 1);
 	}
