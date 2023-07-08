@@ -1,37 +1,25 @@
-#include <string.h>
-#include <stdlib.h>
-#include <math.h>
 #include "main.h"
 
 /**
- * binary_to_unit - A function that converts a binary
- * number to an unsigned int.
- * @b: pointer variable
- * Return: Always 0 (Success).
+ * binary_to_uint -a func that  converts bi num to unsigned int
+ * @bin: string holding the binary numbers
+ *
+ * Return: the decimal numbers
  */
-
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *bin)
 {
-unsigned int result;
-int lent;
-int i;
+	int i;
+	unsigned int result = 0;
 
-result = 0;
-lent = strlen(b);
-
-if (lent == 0)
-return (0);
-
-for (i = lent - 1; i >= 0; i--)
-{
-	if (b[i] != '0' || '1')
+	if (!bin)
 		return (0);
 
-	else if (b[i] == '1')
+	for (i = 0; bin[i]; i++)
 	{
-		result = result + pow(2, lent - i - 1);
+		if (bin[i] < '0' || bin[i] > '1')
+			return (0);
+		result = 2 * result + (bin[i] - '0');
 	}
-}
 
-return (result);
+	return (result);
 }
