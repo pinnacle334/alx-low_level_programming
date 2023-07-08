@@ -4,13 +4,13 @@
 #include "main.h"
 
 /**
- * binary_to_unit - A function that converts a binary
+ * binary_to_uint - A function that converts a binary
  * number to an unsigned int.
  * @b: pointer variable
  * Return: Always 0 (Success).
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 unsigned int result;
 int lent;
