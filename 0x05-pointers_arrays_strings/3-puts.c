@@ -7,15 +7,9 @@
  */
 void _puts(char *str)
 {
-	int i = 0;
-
-	while (*str != '\0')
+	for (int i = 0; str[i] != '\0'; ++i)
 	{
-		if (*str == '\0')
-			break;
 		_putchar(str[i]);
-		str++;
-		i++;
 	}
 	_putchar(10);
 }
