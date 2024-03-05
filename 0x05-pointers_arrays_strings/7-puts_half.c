@@ -13,8 +13,9 @@ void puts_half(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	}
+	i -= 1;
 
-	if ((i % 2 != 0)
+	if ((i % 2) != 0)
 		k = (i - 1) / 2;
 	k = i / 2;
 
